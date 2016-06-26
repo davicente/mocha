@@ -91,7 +91,7 @@ function addSauceTests(cfg) {
     ie8: {
       base: 'SauceLabs',
       browserName: 'internet explorer',
-      platform: 'Windows 7',
+      platform: 'Windows XP',
       version: '8.0'
     },
     chrome: {
