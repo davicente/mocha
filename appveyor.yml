@@ -8,7 +8,6 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
-  - npm -g install npm@latest
   - set PATH=%APPDATA%\npm;c:\MinGW\bin;%PATH%
   - npm install
   - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe
