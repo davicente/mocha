@@ -4,12 +4,14 @@ environment:
     - nodejs_version: '4'
     - nodejs_version: '0.12'
     - nodejs_version: '0.10'
+    - nodejs_version: '0.8'
 install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
   - npm -g install npm@latest
   - set PATH=%APPDATA%\npm;%PATH%
   - npm install
+  - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe
 matrix:
   fast_finish: true
 build: off
